@@ -1,3 +1,11 @@
+export { default as Accordion } from './lib/Accordion';
+export { AccordionProps } from './lib/Accordion';
+export { default as AccordionBody } from './lib/AccordionBody';
+export { AccordionBodyProps } from './lib/AccordionBody';
+export { default as AccordionHeader } from './lib/AccordionHeader';
+export { AccordionHeaderProps } from './lib/AccordionHeader';
+export { default as AccordionItem } from './lib/AccordionItem';
+export { AccordionItemProps } from './lib/AccordionItem';
 export { default as Alert } from './lib/Alert';
 export { AlertProps } from './lib/Alert';
 export { default as Badge } from './lib/Badge';
@@ -52,14 +60,14 @@ export { default as CarouselIndicators } from './lib/CarouselIndicators';
 export { CarouselIndicatorsProps } from './lib/CarouselIndicators';
 export { default as CarouselCaption } from './lib/CarouselCaption';
 export { CarouselCaptionProps } from './lib/CarouselCaption';
+export { default as CloseButton } from './lib/CloseButton'
+export { CloseButtonProps } from './lib/CloseButton'
 export { default as Col } from './lib/Col';
 export { ColProps } from './lib/Col';
 export { default as Collapse } from './lib/Collapse';
 export { CollapseProps } from './lib/Collapse';
 export { default as Container } from './lib/Container';
 export { ContainerProps } from './lib/Container';
-export { default as CustomInput } from './lib/CustomInput';
-export { CustomInputProps } from './lib/CustomInput';
 export { default as Dropdown } from './lib/Dropdown';
 export { DropdownProps } from './lib/Dropdown';
 export { default as DropdownItem } from './lib/DropdownItem';
@@ -82,14 +90,8 @@ export { default as Input } from './lib/Input';
 export { InputProps } from './lib/Input';
 export { default as InputGroup } from './lib/InputGroup';
 export { InputGroupProps } from './lib/InputGroup';
-export { default as InputGroupAddon } from './lib/InputGroupAddon';
-export { InputGroupAddonProps } from './lib/InputGroupAddon';
-export { default as InputGroupButtonDropdown } from './lib/InputGroupButtonDropdown';
-export { InputGroupButtonDropdownProps } from './lib/InputGroupButtonDropdown';
 export { default as InputGroupText } from './lib/InputGroupText';
 export { InputGroupTextProps } from './lib/InputGroupText';
-export { default as Jumbotron } from './lib/Jumbotron';
-export { JumbotronProps } from './lib/Jumbotron';
 export { default as Label } from './lib/Label';
 export { LabelProps } from './lib/Label';
 export { default as ListGroup } from './lib/ListGroup';
@@ -128,12 +130,22 @@ export { default as NavItem } from './lib/NavItem';
 export { NavItemProps } from './lib/NavItem';
 export { default as NavLink } from './lib/NavLink';
 export { NavLinkProps } from './lib/NavLink';
+export { default as Offcanvas } from './lib/Offcanvas';
+export { OffcanvasProps } from './lib/Offcanvas';
+export { default as OffcanvasBody } from './lib/OffcanvasBody';
+export { OffcanvasBodyProps } from './lib/OffcanvasBody';
+export { default as OffcanvasHeader } from './lib/OffcanvasHeader';
+export { OffcanvasHeaderProps } from './lib/OffcanvasHeader';
 export { default as Pagination } from './lib/Pagination';
 export { PaginationProps } from './lib/Pagination';
 export { default as PaginationItem } from './lib/PaginationItem';
 export { PaginationItemProps } from './lib/PaginationItem';
 export { default as PaginationLink } from './lib/PaginationLink';
 export { PaginationLinkProps } from './lib/PaginationLink';
+export { default as Placeholder } from './lib/Placeholder';
+export { PlaceholderProps } from './lib/Placeholder';
+export { default as PlaceholderButton } from './lib/PlaceholderButton';
+export { PlaceholderButtonProps } from './lib/PlaceholderButton';
 export { default as Popover } from './lib/Popover';
 export { PopoverProps } from './lib/Popover';
 export { default as PopoverBody } from './lib/PopoverBody';
@@ -163,6 +175,7 @@ export { ToastHeaderProps } from './lib/ToastHeader';
 export { default as Tooltip } from './lib/Tooltip';
 export { TooltipProps } from './lib/Tooltip';
 export {
+  UncontrolledAccordion,
   UncontrolledAlert,
   UncontrolledButtonDropdown,
   UncontrolledDropdown,

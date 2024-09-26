@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CSSModule } from './index';
+import { CSSModule } from './utils';
 
 export type ColumnProps =
   | string
@@ -20,6 +20,7 @@ export interface ColProps extends React.HTMLAttributes<HTMLDivElement> {
   md?: ColumnProps;
   lg?: ColumnProps;
   xl?: ColumnProps;
+  xxl?: ColumnProps;
 
   // custom widths
   widths?: string[];

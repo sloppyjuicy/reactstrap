@@ -1,14 +1,8 @@
 import * as React from 'react';
-import * as Popper from 'popper.js';
-import { CSSModule } from './index';
+import type { Modifier, Boundary, Placement } from '@popperjs/core';
+import { CSSModule } from './utils';
 
-interface PopoverChildrenRenderProps {
-  scheduleUpdate: () => void;
-}
-
-export type PopoverChildren =
-  | ((props: PopoverChildrenRenderProps) => React.ReactNode)
-  | React.ReactNode;
+export type PopoverChildren = React.ReactNode;
 
 export interface PopoverProps extends React.HTMLAttributes<HTMLElement> {
   [key: string]: any;
@@ -16,16 +10,16 @@ export interface PopoverProps extends React.HTMLAttributes<HTMLElement> {
   toggle?: React.MouseEventHandler<any> | (() => void);
   target: string | HTMLElement | React.RefObject<HTMLElement>;
   container?: string | HTMLElement | React.RefObject<HTMLElement>;
-  boundariesElement?: Popper.Boundary | Element;
-  placement?: Popper.Placement;
+  boundariesElement?: Boundary | Element;
+  placement?: Placement;
   popperClassName?: string;
   innerClassName?: string;
   disabled?: boolean;
   hideArrow?: boolean;
   placementPrefix?: string;
   delay?: number | { show: number; hide: number };
-  modifiers?: Popper.Modifiers;
-  positionFixed?: boolean;
+  modifiers?: Modifier<string, any>[];
+  strategy?: string;
   cssModule?: CSSModule;
   fade?: boolean;
   flip?: boolean;

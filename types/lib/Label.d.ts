@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CSSModule } from './index';
+import { CSSModule } from './utils';
 import { ColumnProps } from './Col';
 
 export interface LabelProps
@@ -8,7 +8,6 @@ export interface LabelProps
   hidden?: boolean;
   check?: boolean;
   size?: string;
-  inline?: boolean;
   disabled?: boolean;
   for?: string;
   tag?: React.ElementType;
@@ -18,6 +17,7 @@ export interface LabelProps
   md?: ColumnProps;
   lg?: ColumnProps;
   xl?: ColumnProps;
+  xxl?: ColumnProps;
 
   // custom widths
   widths?: string[];

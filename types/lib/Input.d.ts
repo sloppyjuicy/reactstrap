@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CSSModule } from './index';
+import { CSSModule } from './utils';
 
 export type InputType =
   | 'text'
@@ -8,6 +8,7 @@ export type InputType =
   | 'file'
   | 'radio'
   | 'checkbox'
+  | 'switch'
   | 'textarea'
   | 'button'
   | 'reset'

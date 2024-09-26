@@ -1,14 +1,8 @@
 import * as React from 'react';
-import * as Popper from 'popper.js';
-import { CSSModule } from './index';
+import type { Modifier, Placement } from '@popperjs/core';
+import { CSSModule } from './utils';
 
-interface TooltipChildrenRenderProps {
-  scheduleUpdate: () => void;
-}
-
-export type TooltipChildren =
-  | ((props: TooltipChildrenRenderProps) => React.ReactNode)
-  | React.ReactNode;
+export type TooltipChildren = React.ReactNode;
 
 export interface UncontrolledTooltipProps
   extends React.HTMLAttributes<HTMLElement> {
@@ -19,9 +13,9 @@ export interface UncontrolledTooltipProps
   popperClassName?: string;
   innerClassName?: string;
   autohide?: boolean;
-  placement?: Popper.Placement;
-  modifiers?: Popper.Modifiers;
-  positionFixed?: boolean;
+  placement?: Placement;
+  modifiers?: Modifier<string, any>[];
+  strategy?: string;
   cssModule?: CSSModule;
   fade?: boolean;
   flip?: boolean;

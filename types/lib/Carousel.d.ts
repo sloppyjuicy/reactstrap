@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CSSModule } from './index';
+import { CSSModule } from './utils';
 
 interface CommonCarouselProps extends React.HTMLAttributes<HTMLElement> {
   [key: string]: any;
@@ -11,6 +11,8 @@ interface CommonCarouselProps extends React.HTMLAttributes<HTMLElement> {
   mouseEnter?: () => void;
   mouseExit?: () => void;
   slide?: boolean;
+  dark?: boolean;
+  fade?: boolean;
   cssModule?: CSSModule;
   enableTouch?: boolean;
 }

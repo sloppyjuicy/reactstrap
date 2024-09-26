@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CSSModule } from './index';
+import { CSSModule } from './utils';
 
 export interface ToastHeaderProps extends React.HTMLAttributes<HTMLElement> {
   [key: string]: any;
@@ -9,7 +9,6 @@ export interface ToastHeaderProps extends React.HTMLAttributes<HTMLElement> {
   toggle?: React.MouseEventHandler<any>;
   icon?: string | React.ReactNode;
   close?: React.ReactNode;
-  charCode?: string | number;
   closeAriaLabel?: string;
 }
 
